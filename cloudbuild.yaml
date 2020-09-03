@@ -1,0 +1,12 @@
+steps:
+  # build the container image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/diegoquirino-net/webcam-image', '.']
+    # push the container image to Container Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/diegoquirino-net/webcam-image']
+    # Deploy container image to Cloud Run
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['beta', 'run', 'deploy', 'diegoquirino-net-organiza', '--image', 'gcr.io/diegoquirino-net/webcam-image', '--region', 'us-central1', '--allow-unauthenticated', '--memory', '1Gi', '--platform', 'managed']
+images:
+  - gcr.io/diegoquirino-net/webcam-image

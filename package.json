@@ -1,0 +1,29 @@
+{
+  "name": "webcam",
+  "version": "1.0.0",
+  "description": "Show Webcam in a entire page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegoquirino/webcam.git"
+  },
+  "keywords": [
+    "webcam",
+    "camera",
+    "show",
+    "page"
+  ],
+  "author": "Carlos Diego Quirino Lima",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diegoquirino/webcam/issues"
+  },
+  "homepage": "https://github.com/diegoquirino/webcam#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}
