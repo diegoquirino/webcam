@@ -1,7 +1,7 @@
 {
   "name": "webcam",
   "version": "1.0.0",
-  "description": "Show Webcam in a entire page.",
+  "description": "Mostrar a webcam na página completa",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
